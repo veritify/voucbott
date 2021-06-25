@@ -3,7 +3,7 @@ const Discord = require('discord.js')
 module.exports = {
     name: "vouch",
     description: "Vouch for a user",
-    aliases: ['upvote'],
+    aliases: ['upvote', "rep"],
     execute: async function (message, args, client, user) {
         let vouchUser = await getUser(args[0], client)
         let reason = args.slice(1).join(" ")
