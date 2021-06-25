@@ -18,7 +18,7 @@ module.exports = {
         .setTimestamp()
         if(!reason) return message.channel.send(r)
         user(vouchUser)
-        const e = new DIscord.MessageEmbed()
+        const e = new Discord.MessageEmbed()
         .setTitle("Already Vouched!")
         .setDescription("You have already vouched this user!")
         .setTimestamp()
