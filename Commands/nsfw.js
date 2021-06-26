@@ -8,6 +8,9 @@ module.exports = {
         message.delete();
         const op = args[0]
         if(message.channel.nsfw){
+        if(!message.content.startsWith("+")){
+        message.delete();
+        }
         if(!op) {
             message.channel.send(
                 new Discord.MessageEmbed()
