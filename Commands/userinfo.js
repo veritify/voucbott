@@ -19,4 +19,4 @@ module.exports = {
         message.channel.send(embed)
 
     }
-}
+}//UPDATE
