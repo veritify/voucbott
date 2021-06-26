@@ -27,7 +27,7 @@ module.exports = {
                 .setDescription("You need to mention someone!")
                 .setTimestamp()
                 .setAuthor(message.author.username)
-                message.author.send(e)
+                message.channel.send(e)
         }
     }else{
         message.channel.send('<@'+message.author.id +'>, You dont have permission to use this command')

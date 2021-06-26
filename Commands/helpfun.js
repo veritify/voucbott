@@ -20,4 +20,4 @@ module.exports = {
         .setColor("BLUE")
         message.channel.send(embed)
     }
-}//123
+}
