@@ -4,6 +4,7 @@ module.exports = {
     aliases: ["hlp","hel","elp"],
     execute: async function(message, args, client, user) {
         op = args[0]
+        if(!op){
         const embed = new Discord.MessageEmbed()
         .setTitle("Help Commands")
         .addFields({
@@ -24,7 +25,7 @@ module.exports = {
         .setTimestamp()
         .setColor("BLUE")
         message.channel.send(embed)
-
+    }
 
         if( op === "fun"){
             const embed = new Discord.MessageEmbed()
