@@ -6,7 +6,7 @@ const {
 module.exports = {
     name: "reputation",
     description: "View the reputation of a user",
-    aliases: ['rep'],
+    aliases: ['reps'],
     execute: async function (message, args, client, user) {
         let vouchUser = message.mentions.users.first() || (args[0] ? await client.users.fetch(args[0]) : undefined) || message.author
 
