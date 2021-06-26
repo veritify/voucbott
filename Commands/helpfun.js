@@ -25,6 +25,11 @@ module.exports = {
                 name: "+webhookinfo (webhook)",
                 value: "Sends information an a webhook.",
                 inline: true
+            },
+            {
+                name: "+image (content)",
+                value: "Sends an image back to you!",
+                inline: true
             }
         )
         .setColor("BLUE")
