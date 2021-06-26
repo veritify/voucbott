@@ -5,29 +5,17 @@ module.exports = {
     description:"A simple ping pong command",
     aliases: [],
     execute: async function(client,message, args) {
-        let user = message.mentions.users.first();
+        let user = message.mentions.users.first()
+        if(!user) {
+            const e = new Discord.MessageEmbed()
+            .setDescription("You need to mention someone!")
+            .setTimestamp()
+            .setColor("RED")
+            message.channel.send(e)
+        }
+        const embed = new Discord.MessageEmbed()
+        .setDescription(`Name: ${user.username} \n ID: ${user.id}`)
+        message.channel.send(embed)
 
-        const e = new Discord.MessageEmbed()
-        .setTitle(`${user.user.username} stats`)
-        .setColor("BLUE")
-        .setThumbnail(user.user.displayAvatarURL())
-        .addFields(
-            {
-                name: "Name: ",
-                value: user.user.username, 
-                inline: true
-            },
-            {
-                name: "Discriminator: ",
-                value: user.user.discriminator,
-                inline: true
-            },
-            {
-                name: "ID: ",
-                value: user.user.id,
-                inline: true
-            }
-        )
-        await message.channel.send(e)
     }
-}//123123
+}
