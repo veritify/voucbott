@@ -6,7 +6,7 @@ module.exports = {
     name: 'warn',
     description: 'Warns the mentioned user',
     async execute(message, args) {
-        if (message.member.roles.find(role => role.name === 'Staff')){
+        if (message.member.roles.cache.find(role => role.name === 'Staff')){
         args.shift()
         const target = message.mentions.users.first()
         if(!target){
