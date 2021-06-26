@@ -6,6 +6,7 @@ module.exports = {
         message.delete();
         const query = args.join(' ')
         const im = await  image_finder.find(query)
-        message.reply("Here is your image! " + im).then(msg => msg.delete({timeout: 5000}))
+        message.reply("Here is your image!").then(msg => msg.delete({timeout: 10000}))
+        message.channel.send(im).then(msg => msg.delete({timeout: 12000}))
     }
 }
