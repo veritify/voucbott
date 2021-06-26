@@ -37,7 +37,7 @@ module.exports = {
             .setFooter(client.user.username, client.user.displayAvatarURL())
             .setAuthor(message.author.tag, message.author.displayAvatarURL())
             .setTimestamp()
-            )
+            ).then(message.delete({timeout: 3500}))
     }
 }
 

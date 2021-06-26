@@ -33,9 +33,9 @@ module.exports = {
 
         let embed = new MessageEmbed()
             .setTitle(`${vouchUser.username}'s Reputation`)
-            .setDescription(`👍 Vouches: ${vouches}.\n\n👎 Downvotes: ${downvotes}`)
+            .setDescription(` Vouches: ${vouches}.\n\n Downvotes: ${downvotes}`)
             .setColor("BLUE")
-            .setImage(chartUrl)
+            .setThumbnail(chartUrl)
             .setFooter(client.user.username, client.user.displayAvatarURL())
             .setAuthor(message.author.tag, message.author.displayAvatarURL())
             .setTimestamp()

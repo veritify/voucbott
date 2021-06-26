@@ -25,7 +25,7 @@ for (let file of commandFiles) {
 client.on('ready', () => {
     console.clear()
     console.log(`${client.user.tag} is online!`)
-    client.user.setActivity("+help")
+    client.user.setActivity("+help | Veritify <3")
 })
 
 client.on('message', async message => {
