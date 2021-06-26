@@ -68,91 +68,70 @@ module.exports = {
             .setColor("BLUE")
             .setImage(image);
             message.channel.send(embed);
-        }else if(op === "Boobs" || "boobs" || "boob" || "Boob"){
+        }else if(message.content.includes("boob")){
             const image = await nsfw.boobs();
             const embed = new Discord.MessageEmbed()
             .setTitle(`Boobs Image`)
             .setColor("BLUE")
             .setImage(image);
             message.channel.send(embed);
-        }else if(op === "hentaiass" || "HentaiAss" || "Hentaiass" || "HENTAIASS"){
-            const image = await nsfw.hentaiass();
-            const embed = new Discord.MessageEmbed()
-            .setTitle(`Hentai Ass Image`)
-            .setColor("BLUE")
-            .setImage(image);
-            message.channel.send(embed);
-        }else if(op === "Hentai" || "hentai" || "HENTAI" || "hentaI"){
+        }else if(message.content.includes("hentai")){
             const image = await nsfw.hentai();
             const embed = new Discord.MessageEmbed()
             .setTitle(`Hentai Image`)
             .setColor("BLUE")
-            .setImage(image);//123
-            message.channel.send(embed);
-        }else if(op === "HentaiMidriff" || "hentaimidriff" || "HENTAIMIDRIFF" || "Hentamidriff"){
-            const image = await nsfw.hmidriff();
-            const embed = new Discord.MessageEmbed()
-            .setTitle(`Hentai Midriff Image`)
-            .setColor("BLUE")
             .setImage(image);
             message.channel.send(embed);
-        }else if(op === "HentaiThigh" || "hentaithigh" || "HENTAIthigh" || "HENTAITHIGH"){
-            const image = await nsfw.hentaithigh();
-            const embed = new Discord.MessageEmbed()
-            .setTitle(`Hentai Thigh Image`)
-            .setColor("BLUE")
-            .setImage(image);
-            message.channel.send(embed);
-        }else if(op === "Erokemo" || "erokemo" || "EROKEMO" || "ERokemo"){
+        }else if(op === message.content.includes("Erokemo")){
             const image = await nsfw.erokemo();
             const embed = new Discord.MessageEmbed()
             .setTitle(`Erokemo Image`)
             .setColor("BLUE")
             .setImage(image);
             message.channel.send(embed);
-        }else if(op === "Kitsune" || "kitsune" || "KITSUNE" || "KItsune"){
+        }else if(message.content.includes("Kitsune")){
             const image = await nsfw.kitsune();
             const embed = new Discord.MessageEmbed()
             .setTitle(`Kitsune Image`)
             .setColor("BLUE")
             .setImage(image);
             message.channel.send(embed);
-        }else if(op === "Lewd" || "lewD" || "LEWD" || "lewd"){
+        }else if(message.content.includes("lewd")){
             const image = await nsfw.lewd();
             const embed = new Discord.MessageEmbed()
             .setTitle(`Lewd Image`)
             .setColor("BLUE")
             .setImage(image);
             message.channel.send(embed);
-        }else if(op === "NekoFeet" || "nekofeet" || "NEKOFEET" || "nekoFeet"){
+        }else if(message.content.includes("nekofeet")){
             const image = await nsfw.nekofeet();
             const embed = new Discord.MessageEmbed()
             .setTitle(`Neko Feet Image`)
             .setColor("BLUE")
             .setImage(image);
             message.channel.send(embed);
-        }else if(op === "NekoPussy" || "nekopussy" || "NEKOPUSSY" || "nekoPussy"){
+        }else if(message.content.includes("nekopussy")){
             const image = await nsfw.nekopussy();
             const embed = new Discord.MessageEmbed()
             .setTitle(`Neko Pussy Image`)
             .setColor("BLUE")
             .setImage(image);
             message.channel.send(embed);
-        }else if(op === "NekoTits" || "nekotits" || "NEKOTITS" || "nekotit"){
+        }else if(message.content.includes("nekotits")){
             const image = await nsfw.nekotits();
             const embed = new Discord.MessageEmbed()
             .setTitle(`Neko Tits Image`)
             .setColor("BLUE")
             .setImage(image);
             message.channel.send(embed);
-        }else if(op === "Solo" || "solo" || "SOLO" || "soLO"){
+        }else if(message.content.includes("solo")){
             const image = await nsfw.solo();
             const embed = new Discord.MessageEmbed()
             .setTitle(`Solo Image`)
             .setColor("BLUE")
             .setImage(image);
             message.channel.send(embed);
-        }else if(op === "Wallpaper" || "wallpaper" || "WALLPAPER" || "wallPaper"){
+        }else if(message.content.includes("wallpaper")){
             const image = await nsfw.wallpaper();
             const embed = new Discord.MessageEmbed()
             .setTitle(`Wallpaper Image`)
