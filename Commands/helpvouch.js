@@ -5,12 +5,8 @@ module.exports = {
     description:"A simple ping pong command",
     execute: async function(message, args, client, user) {
         const embed = new Discord.MessageEmbed()
-        .setTitle("**Commands**")
-        .addFields({
-            name: "+ping",
-            value: "Sends Pong to you!",
-            inline: true
-        },
+        .setTitle("**All Vouch Commands**")
+        .addFields(
         {
             name: "+vouch (user) (reason)",
             value: "Vouches mentioned user.",
@@ -26,11 +22,9 @@ module.exports = {
             value: "Downvotes mentioned user.",
             inline: true
         },
-        {
-
-        }
         )
         .setTimestamp()
+        .setColor("BLUE")
         message.channel.send(embed)
     }
 }
@@ -38,11 +32,6 @@ module.exports = {
 
 
 
-
-////+ping - Sends Pong! 
-//+vouch/+rep/+upvote (user) (reason) - Vouches mentioned person 
-//+downvote (user) (reason) - Downvotes mentioned user.
-//+reputation/+reps (user) - Sends amount of downvotes and vouches they have. 
 //+ban (user) (reason) - Bans mentioned member. 
 //+kick (user) (reason) - Kicks mentioned member. 
 //+mute (user) (reason) - Mutes mentioned member. 

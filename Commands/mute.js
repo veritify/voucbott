@@ -15,8 +15,14 @@ module.exports = {
                 .setColor('#00000')
                .setTimestamp()
                 logch.send(logEm)
-                let memberrole = message.guild.roles.cache.find(role => role.name === 'Member');
+                let memberrole = message.guild.roles.cache.find(role => role.name === 'Community');
+                if(!memberrole){
+                    message.channel.send("Please call you main role 'Community'")
+                }
                 let muted = message.guild.roles.cache.find(role => role.name === 'Muted');
+                if(!muted){
+                    message.channel.send("Please create a role called 'Muted'")
+                }
                 let memberTarget = message.guild.members.cache.get(target.id);
                 if (!args[1]) {
                     memberTarget.roles.remove(memberrole.id);
