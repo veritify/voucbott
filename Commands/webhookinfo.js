@@ -1,4 +1,5 @@
 const Discord = require('discord.js')
+const axios = require("axios")
 module.exports = {
     name:"webhookinfo",
     description:"A simple ping pong command",
@@ -11,8 +12,7 @@ module.exports = {
             .setColor("RED")
             .setTimestamp()
         }
-        //const { data } = await axios.get(args[0])
-        //message.channel.send(data)
-        message.channel.send(args[0])
+        const { data } = await axios.get(args[0])
+        message.channel.send(data)
     }
-}//123
+}
