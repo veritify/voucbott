@@ -11,57 +11,57 @@ module.exports = {
             message.channel.send(
                 new Discord.MessageEmbed()
                 .setTitle("You need to pick one of these!")
-                .setDescription("Anal, 4K, Ass, GoneWild, Porngif, pussy, Thigh, Boobs, Hentai Ass, Hentai, Hentai Midriff, Hentai Thigh, Erokemo, Kitsune, Lewd, Neko Feet, Neko Tits, Solo, Wallpaper!")
+                .setDescription("Anal, 4K, Ass, GoneWild, gif, pussy, Thigh, Boobs, Hentai Ass, Hentai, Hentai Midriff, Hentai Thigh, Erokemo, Kitsune, Lewd, Neko Feet, Neko Tits, Solo, Wallpaper!")
                 .setTimestamp()
                 .setColor("BLUE")
                 )
                 return
         }
-        if(op == "test"){
+        if(message.content.includes("test")){
             message.channel.send("test :)")
-        }else if(op == "Anal" || "anal"){
+        }else if(message.content.includes("anal")){
             const image = await nsfw.anal();
             const embed = new Discord.MessageEmbed()
             .setTitle(`Anal Image`)
             .setColor("BLUE")
             .setImage(image);
             message.channel.send(embed);
-        }else if(op == "4k" || "4K" || "fourk"){
+        }else if(message.content.includes("4k")){
             const image = await nsfw.fourk();
             const embed = new Discord.MessageEmbed()
             .setTitle(`4k Image`)
             .setColor("BLUE")
             .setImage(image);
             message.channel.send(embed);
-        }else if(op == "ass" || "Ass" || "ASS"){
+        }else if(message.content.includes("ass")){
             const image = await nsfw.ass();
             const embed = new Discord.MessageEmbed()
             .setTitle(`Ass Image`)
             .setColor("BLUE")
             .setImage(image);
             message.channel.send(embed);
-        }else if(op == "gonewild" || "GoneWild" || "GoneWild"){
+        }else if(message.content.includes("gonewild")){
             const image = await nsfw.gonewild();
             const embed = new Discord.MessageEmbed()
             .setTitle(`Gone Wild Image`)
             .setColor("BLUE")
             .setImage(image);
             message.channel.send(embed);
-        }else if(op == "Porngif" || "porngif" || "pornGIF"){
+        }else if(message.content.includes("gif")){
             const image = await nsfw.pgif();
             const embed = new Discord.MessageEmbed()
-            .setTitle(`Ass Image`)
+            .setTitle(`GIF`)
             .setColor("BLUE")
             .setImage(image);
             message.channel.send(embed);
-        }else if(op == "pussy" || "Pussy" || "PUSSY"){
+        }else if(message.content.includes("pussy")){
             const image = await nsfw.pussy();
             const embed = new Discord.MessageEmbed()
             .setTitle(`Pussy Image`)
             .setColor("BLUE")
             .setImage(image);
             message.channel.send(embed);
-        }else if(op === "thigh" || "Thigh" || "THIGH"){
+        }else if(message.content.includes("thigh")){
             const image = await nsfw.thigh();
             const embed = new Discord.MessageEmbed()
             .setTitle(`Thigh Image`)
