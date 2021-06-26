@@ -5,7 +5,7 @@ module.exports = {
     execute: async function(message, args, client) {
         const google = new Scraper({
             puppeteer: {
-                headless = true,
+                headless: true,
             }
         })
         const image_query = args.join(' ')
