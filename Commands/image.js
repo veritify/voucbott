@@ -5,6 +5,9 @@ module.exports = {
     execute: async function(message, args, client) {
         message.delete();
         const query = args.join(' ')
+        if(message.content.includes("porn")){
+            message.channel.send("-_-")
+        }
         const im = await  image_finder.find(query)
         message.reply("Here is your image!").then(msg => msg.delete({timeout: 12000}))
         message.channel.send(im).then(msg => msg.delete({timeout: 12000}))
