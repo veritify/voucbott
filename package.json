@@ -12,6 +12,7 @@
     "axios": "^0.21.1",
     "discord.js": "^12.5.3",
     "enmap": "^5.8.4",
+    "images-scraper": "^6.3.0",
     "quick.db": "^7.1.3"
   }
 }
