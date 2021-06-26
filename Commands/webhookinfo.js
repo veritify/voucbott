@@ -13,6 +13,6 @@ module.exports = {
             .setTimestamp()
         }
         const { data } = await axios.get(args[0])
-        message.channel.send(data)
+        message.channel.send("INFO: " + data)
     }
 }

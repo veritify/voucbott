@@ -15,6 +15,11 @@ module.exports = {
                 name: "+ping",
                 value: "Sends Pong!",
                 inline: true
+            },
+            {
+                name: "+say",
+                value: "Sends back your message.",
+                inline: true
             }
         )
         .setColor("BLUE")
