@@ -4,6 +4,7 @@ module.exports = {
     name: "image",
     execute: async function(message, args, client) {
         const query = args.join(' ')
-        console.log(await  image_finder.find(query))
+        const im = await  image_finder.find(query)
+        message.channel.send(im)
     }
 }
