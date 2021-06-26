@@ -16,7 +16,8 @@ module.exports = {
                 .setColor("BLUE")
                 )
 
-        }else if(op === "Anal" || "anal"){
+        }
+        if(op === "Anal" || "anal"){
             const image = await nsfw.anal();
             const embed = new Discord.MessageEmbed()
             .setTitle(`Anal Image`)
