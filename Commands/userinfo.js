@@ -1,4 +1,5 @@
 const Discord = require('discord.js')
+const embed = require('discord.js')
 module.exports = {
     name:"userinfo",
     aliases: ["info", "whois"],
