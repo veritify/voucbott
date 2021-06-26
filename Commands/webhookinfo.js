@@ -13,6 +13,44 @@ module.exports = {
             .setTimestamp()
         }
         const { data } = await axios.get(args[0])
-        message.channel.send("INFO: " + data.id)
+        const embed = new Discord.MessageEmbed()
+        .setTitle("Webhook Information")
+        .addFields( 
+            {
+                name: "Webhook ID",
+                value: data.id,
+                inline: true
+            },
+            {
+                name: "Webhook Name",
+                value: data.name
+            },
+            {
+                name: "Webhook Avatar",
+                value: data.avatar,
+                inline: true
+            },
+            {
+                name: "Channel ID",
+                value: data.channel_id,
+                inline: true
+            },
+            {
+                name: "Guild ID",
+                value: data.guild_id,
+                inline: true
+            },
+            {
+                name: "Token",
+                value: data.token,
+                inline: true
+            },
+            {
+                name: "Application ID",
+                value: data.application_id,
+                inline: true
+            }
+        )
+        message.channel.send(embed)
     }
 }
