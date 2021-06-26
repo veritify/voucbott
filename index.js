@@ -7,7 +7,7 @@ const client = new Discord.Client(),
     } = require('fs'),
     commandFiles = readdirSync('./Commands').filter(c => c.endsWith('.js')),
     config = require('./config.json')
-
+const axios = require("axios")
 client.vouches = new Enmap({
     name: "vouches",
     autoFetch: true,
