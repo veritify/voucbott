@@ -6,7 +6,7 @@ module.exports = {
     name: 'warn',
     description: 'Warns the mentioned user',
     async execute(message, args) {
-        if(message.author.hasPermission("BAN_MEMBERS")){
+        if (message.member.roles.find(role => role.name === 'Staff')){
         args.shift()
         const target = message.mentions.users.first()
         if(!target){
@@ -32,7 +32,7 @@ module.exports = {
        .setTimestamp()
         message.author.send(logEm)
     }else{
-        message.reply(" You do not have permission to use this!")
+        message.reply(" You do not have 'Staff' role!")
     }
     }
 }
