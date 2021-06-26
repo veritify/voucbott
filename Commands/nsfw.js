@@ -87,7 +87,7 @@ module.exports = {
             const embed = new Discord.MessageEmbed()
             .setTitle(`Hentai Image`)
             .setColor("BLUE")
-            .setImage(image);
+            .setImage(image);//123
             message.channel.send(embed);
         }else if(op === "HentaiMidriff" || "hentaimidriff" || "HENTAIMIDRIFF" || "Hentamidriff"){
             const image = await nsfw.hmidriff();
