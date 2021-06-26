@@ -6,7 +6,6 @@ module.exports = {
   description: 'Set your afk status',
   execute(client, message) {
     // check if the client can change nicknames
-    if (!client.user.hasPermissions('MANAGE_NICKNAMES')) return message.channel.send('status change failed');
     // Add/update the member in the database
     quick.set(`${message.author.id}_${message.guild.id}_afk`, {
       username: message.member.displayName.replace('[AFK]', ''), // replace the AFK part of the nickname of the member is afk and uses the command again
