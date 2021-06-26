@@ -1,7 +1,6 @@
 const Discord = require('discord.js')
 module.exports = {
     name:"helpfun",
-    description:"A simple ping pong command",
     aliases: [],
     execute: async function(message, args, client, user) {
         const embed = new Discord.MessageEmbed()
@@ -18,5 +17,6 @@ module.exports = {
                 inline: true
             }
         )
+        message.channel.send(embed)
     }
 }//123

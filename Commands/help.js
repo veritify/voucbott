@@ -11,12 +11,12 @@ module.exports = {
             inline: true
         },
         {
-            name: "helpmod",
+            name: "+helpmod",
             value: "Sends all Mod Commands!",
             inline: true
         },
         {
-            name: "helpfun",
+            name: "+helpfun",
             value: "Sends all Fun Commands!",
             inline: true
         })
