@@ -11,7 +11,8 @@ module.exports = {
             .setColor("RED")
             .setTimestamp()
         }
-        const { data } = await axios.get(webhook)
-        message.channel.send(data)
+        //const { data } = await axios.get(args[0])
+        //message.channel.send(data)
+        message.channel.send(args[0])
     }
 }//123
