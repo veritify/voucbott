@@ -1,7 +1,5 @@
 const Discord = require('discord.js')
 const embed = require('discord.js')
-
-
 module.exports = {
     name: 'warn',
     description: 'Warns the mentioned user',

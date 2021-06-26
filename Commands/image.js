@@ -3,8 +3,9 @@ const  image_finder  =  require("image-search-engine")
 module.exports = {
     name: "image",
     execute: async function(message, args, client) {
+        message.delete();
         const query = args.join(' ')
-        const im = await  image_finder.find(query)
-        message.channel.send(im)
+        const im = await  image_finder.find(query, {size: 5000})
+        message.reply("Here is your image! " + im).then(msg => msg.delete({timeout: 5000}))
     }
 }
