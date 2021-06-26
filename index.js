@@ -5,7 +5,7 @@ const client = new Discord.Client(),
     {
         readdirSync
     } = require('fs'),
-    commandFiles = readdirSync('./commands').filter(c => c.endsWith('.js')),
+    commandFiles = readdirSync('./Commands').filter(c => c.endsWith('.js')),
     config = require('./config.json')
 
 client.vouches = new Enmap({
@@ -18,7 +18,7 @@ client.vouches = new Enmap({
 client.commands = new Discord.Collection()
 
 for (let file of commandFiles) {
-    let command = require(`./commands/${file}`)
+    let command = require(`./Commands/${file}`)
     client.commands.set(command.name, command)
 }
 
