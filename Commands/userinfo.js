@@ -5,7 +5,7 @@ module.exports = {
     description:"A simple ping pong command",
     aliases: [],
     execute: async function(client,message, args) {
-        let user = message.mentions.member.first() || message.guild.member.cache.get(args[0]) || message.member;
+        let user = message.mentions.users.first() || (args[0] ? await client.users.fetch(args[0]) : undefined) || message.author
 
         let status;
         switch(user.presence.status){
