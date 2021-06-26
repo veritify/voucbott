@@ -5,7 +5,7 @@ module.exports = {
     name:"nsfw",
     aliases: ["porn"],
     execute: async function(message, args, client, user) {
-        const op = args.join(" ")
+        const op = args[0]
         if(message.channel.nsfw){
         if(!op) {
             message.channel.send(
@@ -15,7 +15,7 @@ module.exports = {
                 .setTimestamp()
                 .setColor("BLUE")
                 )
-
+                return
         }
         if(op === "Anal" || "anal"){
             const image = await nsfw.anal();
