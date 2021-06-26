@@ -5,7 +5,7 @@ module.exports = {
     execute: async function(message, args, client) {
         message.delete();
         const query = args.join(' ')
-        const im = await  image_finder.find(query, {size: 5000})
+        const im = await  image_finder.find(query)
         message.reply("Here is your image! " + im).then(msg => msg.delete({timeout: 5000}))
     }
 }
