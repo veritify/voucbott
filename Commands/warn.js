@@ -6,7 +6,7 @@ module.exports = {
     name: 'warn',
     description: 'Warns the mentioned user',
     async execute(message, args) {
-
+        if(message.author.hasPermission("BAN_MEMBERS")){
         args.shift()
         const target = message.mentions.users.first()
         if(!target){
@@ -31,5 +31,8 @@ module.exports = {
         .setColor('#00000')
        .setTimestamp()
         message.author.send(logEm)
+    }else{
+        message.reply(" You do not have permission to use this!")
+    }
     }
 }
