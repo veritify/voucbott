@@ -8,9 +8,6 @@ module.exports = {
         message.delete();
         const op = args[0]
         if(message.channel.nsfw){
-        if(!message.content.startsWith("+")){
-        message.delete();
-        }
         if(!op) {
             message.channel.send(
                 new Discord.MessageEmbed()
@@ -86,14 +83,14 @@ module.exports = {
             .setColor("BLUE")
             .setImage(image);
             message.channel.send(embed).then(msg => msg.delete({timeout: 12000}))
-        }else if(op === message.content.includes("Erokemo")){
+        }else if(op === message.content.includes("erokemo")){
             const image = await nsfw.erokemo();
             const embed = new Discord.MessageEmbed()
             .setTitle(`Erokemo Image`)
             .setColor("BLUE")
             .setImage(image);
             message.channel.send(embed).then(msg => msg.delete({timeout: 12000}))
-        }else if(message.content.includes("Kitsune")){
+        }else if(message.content.includes("kitsune")){
             const image = await nsfw.kitsune();
             const embed = new Discord.MessageEmbed()
             .setTitle(`Kitsune Image`)
