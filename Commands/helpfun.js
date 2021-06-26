@@ -17,6 +17,7 @@ module.exports = {
                 inline: true
             }
         )
+        .setColor("BLUE")
         message.channel.send(embed)
     }
 }//123
