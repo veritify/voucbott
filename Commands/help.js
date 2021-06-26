@@ -55,6 +55,16 @@ module.exports = {
                     name: "+image (content)",
                     value: "Sends an image back to you!",
                     inline: true
+                },
+                {
+                    name: "+nsfw (option)",
+                    value: "Sends an NSFW image!(only works in nsfw channels)",
+                    inline: true
+                },
+                {
+                    name: "8ball",
+                    value: "Gives you an answer to your question.",
+                    inline: true
                 }
             )
             .setColor("BLUE")

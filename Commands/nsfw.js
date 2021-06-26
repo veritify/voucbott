@@ -6,6 +6,7 @@ module.exports = {
     aliases: ["porn"],
     execute: async function(message, args, client, user) {
         const op = args.join(" ")
+        if(message.channel.nsfw){
         if(!op) {
             message.channel.send(
                 new Discord.MessageEmbed()
@@ -164,5 +165,14 @@ module.exports = {
                 .setTimestamp()
             )
         }
+    }else{
+        message.channel.send(
+            new Discord.MessageEmbed()
+            .setTitle("Error!")
+            .setDescription("This is not a NSFW channel!")
+            .setColor("BLUE")
+            .setTimestamp()
+        )
+    }
     }
 }
