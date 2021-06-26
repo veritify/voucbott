@@ -17,7 +17,9 @@ module.exports = {
                 )
                 return
         }
-        if(op == "Anal" || "anal"){
+        if(op == "test"){
+            message.channel.send("test :)")
+        }else if(op == "Anal" || "anal"){
             const image = await nsfw.anal();
             const embed = new Discord.MessageEmbed()
             .setTitle(`Anal Image`)
