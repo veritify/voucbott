@@ -23,7 +23,7 @@ module.exports = {
         const reason = args.join(" ")
         const embed = new Discord.MessageEmbed()
         .setTitle(`<@${target}>, You have been warned.`)
-        .setDescription(`You have been warned by ${message.author.username}!\n Reason : ${reson} \n Server: ${guild.name}`)
+        .setDescription(`You have been warned by ${message.author.username}!\n Reason : ${reason} \n Server: ${guild.name}`)
         .setTimestamp()
         message.channel.send(embed)
         let logEm = new Discord.MessageEmbed()
