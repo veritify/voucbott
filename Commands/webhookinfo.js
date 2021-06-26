@@ -14,4 +14,4 @@ module.exports = {
         const { data } = await axios.get(webhook)
         message.channel.send(data)
     }
-}
+}//123
