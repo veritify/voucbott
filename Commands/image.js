@@ -5,7 +5,7 @@ module.exports = {
     execute: async function(message, args, client) {
         message.delete();
         const query = args.join(' ')
-        if(message.content.includes("porn" || "dick" || "pussy" || "vagina" || "std" || "sex" || "nigger" || "nigga")){
+        if(message.content.includes("porn" || "dick" || "pussy" || "vagina" || "std" || "sex" || "nigger" || "nigga" || "balls")){
             message.channel.send("-_-")
             return
         }else{
