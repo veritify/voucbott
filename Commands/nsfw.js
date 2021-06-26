@@ -17,42 +17,42 @@ module.exports = {
                 )
                 return
         }
-        if(op === "Anal" || "anal"){
+        if(op == "Anal" || "anal"){
             const image = await nsfw.anal();
             const embed = new Discord.MessageEmbed()
             .setTitle(`Anal Image`)
             .setColor("BLUE")
             .setImage(image);
             message.channel.send(embed);
-        }else if(op === "4k" || "4K" || "fourk"){
+        }else if(op == "4k" || "4K" || "fourk"){
             const image = await nsfw.fourk();
             const embed = new Discord.MessageEmbed()
             .setTitle(`4k Image`)
             .setColor("BLUE")
             .setImage(image);
             message.channel.send(embed);
-        }else if(op === "ass" || "Ass" || "ASS"){
+        }else if(op == "ass" || "Ass" || "ASS"){
             const image = await nsfw.ass();
             const embed = new Discord.MessageEmbed()
             .setTitle(`Ass Image`)
             .setColor("BLUE")
             .setImage(image);
             message.channel.send(embed);
-        }else if(op === "gonewild" || "GoneWild" || "GoneWild"){
+        }else if(op == "gonewild" || "GoneWild" || "GoneWild"){
             const image = await nsfw.gonewild();
             const embed = new Discord.MessageEmbed()
             .setTitle(`Gone Wild Image`)
             .setColor("BLUE")
             .setImage(image);
             message.channel.send(embed);
-        }else if(op === "Porngif" || "porngif" || "pornGIF"){
+        }else if(op == "Porngif" || "porngif" || "pornGIF"){
             const image = await nsfw.pgif();
             const embed = new Discord.MessageEmbed()
             .setTitle(`Ass Image`)
             .setColor("BLUE")
             .setImage(image);
             message.channel.send(embed);
-        }else if(op === "pussy" || "Pussy" || "PUSSY"){
+        }else if(op == "pussy" || "Pussy" || "PUSSY"){
             const image = await nsfw.pussy();
             const embed = new Discord.MessageEmbed()
             .setTitle(`Pussy Image`)
