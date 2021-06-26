@@ -1,5 +1,5 @@
 const Discord = require('discord.js')
-var Scraper = require('images-scraper');
+const  image_finder  =  require("image-search-engine")
 module.exports = {
     name: "image",
     execute: async function(message, args, client) {
