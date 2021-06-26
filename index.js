@@ -26,7 +26,7 @@ client.on('ready', () => {
     console.clear()
     console.log(`${client.user.tag} is online!`)
     client.user.setActivity(`+help | I am in ${client.guilds.cache.size} servers!`)
-    let channel = client.channels.get('858362136912724008');
+    const channel = client.channels.cache.find(channel => channel.name === "Speed")
     channel.join()
 })
 
