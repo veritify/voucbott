@@ -2,10 +2,10 @@ const Discord = require('discord.js')
 const fetch = require('node-fetch')
 module.exports = {
     name:"meme",
-    async run(message, args, client, user) {
+    execute: async function(message, args, client, user) {
         fetch('https://meme-api.herokuapp.com/gimme')
         .then(res => res.json())
-        .then(json => {
+        .then(async json => {
             const embed = new Discord.MessageEmbed()
             .setTitle(json.title)
             .setImage(json.url)
