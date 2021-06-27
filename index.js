@@ -30,6 +30,30 @@ client.on('ready', () => {
     channel.join()
 })
 
+client.on('guildMemberAdd', member => {
+    const goodbyeEmbed = new Discord.MessageEmbed()
+
+    goodbyeEmbed.setColor('BLUE')
+    goodbyeEmbed.setTitle('**' + member.user.username + '** joined! There is now **' + member.guild.memberCount + '** members!')
+    
+    f = member.guild.channels.cache.find(i => i.name === 'welcome')
+    if(!f){
+        await message.channel.send("Please create a channel called 'greetings'!")
+    }
+    f.send(goodbyeEmbed)
+})
+client.on('guildMemberRemove', member => {
+    const goodbyeEmbed = new Discord.MessageEmbed()
+
+    goodbyeEmbed.setColor('BLUE')
+    goodbyeEmbed.setTitle('**' + member.user.username + '** left! There is now **' + member.guild.memberCount + '** members!')
+     f = member.guild.channels.cache.find(i => i.name === 'greetings')
+     if(!f){
+         await message.channel.send("Please create a channel called 'greetings'!")
+     }
+     f.send(goodbyeEmbed)
+})
+
 client.on('message', async message => {
     let user = (user) => {
         return client.vouches.ensure(user.id, {
