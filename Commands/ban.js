@@ -11,7 +11,7 @@ module.exports = {
         if(member){
         const memberTarget = message.guild.members.cache.get(member.id)
         const memberTargetname = message.guild.members.cache.get(member.name)
-        memberTarget.ban()
+        memberTarget.ban({reason: reason})
         const embed = new Discord.MessageEmbed()
         .setDescription("Banned <@"+ memberTarget + '>')
         message.channel.send(embed)
