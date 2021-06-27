@@ -51,7 +51,7 @@ client.on('message', async message => {
     if (!command) return;
 
     try {
-        await command.execute(message, args, client, user)
+        await command.execute(message, args,cmds,client, user)
     } catch (e) {
         console.log(e)
     }

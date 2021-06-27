@@ -142,7 +142,7 @@ module.exports = {
             message.channel.send(embed)
         }else if(op === "info"){
             const embed = new Discord.MessageEmbed()
-            .setTitle("**All Info Commands")
+            .setTitle("All Info Commands")
             .addFields(
                 {
                     name: "+serverinfo",
