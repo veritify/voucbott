@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 module.exports = {
-    name: "update",
+    name: "serverinfo",
     description: 'Sends Discord Server',
     execute(message, args){
         const {guild} = message

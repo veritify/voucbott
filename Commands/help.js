@@ -21,7 +21,13 @@ module.exports = {
             name: "+help fun",
             value: "Sends all Fun Commands!",
             inline: true
-        })
+        },
+        {
+            name: "+help info",
+            value: "Sends all Information Commands!",
+            inline: true
+        }
+        )
         .setTimestamp()
         .setColor("BLUE")
         message.channel.send(embed)
@@ -132,6 +138,23 @@ module.exports = {
             },
             )
             .setTimestamp()
+            .setColor("BLUE")
+            message.channel.send(embed)
+        }else if(op === "info"){
+            const embed = new Discord.MessageEmbed()
+            .setTitle("**All Info Commands")
+            .addFields(
+                {
+                    name: "+serverinfo",
+                    value: "Sends Server Information",
+                    inline: true
+                },
+                {
+                    name: "+membercount",
+                    value: "Sends how many members are in the server.",
+                    inline: true
+                }
+            )
             .setColor("BLUE")
             message.channel.send(embed)
         }
