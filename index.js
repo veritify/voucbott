@@ -38,7 +38,7 @@ client.on('guildMemberAdd', member => {
     
     f = member.guild.channels.cache.find(i => i.name === 'welcome')
     if(!f){
-        await message.channel.send("Please create a channel called 'greetings'!")
+        message.channel.send("Please create a channel called 'greetings'!")
     }
     f.send(goodbyeEmbed)
 })
@@ -49,7 +49,7 @@ client.on('guildMemberRemove', member => {
     goodbyeEmbed.setTitle('**' + member.user.username + '** left! There is now **' + member.guild.memberCount + '** members!')
      f = member.guild.channels.cache.find(i => i.name === 'greetings')
      if(!f){
-         await message.channel.send("Please create a channel called 'greetings'!")
+        message.channel.send("Please create a channel called 'greetings'!")
      }
      f.send(goodbyeEmbed)
 })
