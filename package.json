@@ -16,6 +16,7 @@
     "image-search-engine": "^1.2.0",
     "images-scraper": "^6.3.0",
     "minecraft-information": "^0.3.0",
+    "node-fetch": "^2.6.1",
     "quick.db": "^7.1.3"
   }
 }
