@@ -5,6 +5,6 @@ module.exports = {
         const {guild} = message
         const {name,region,memberCount, owner} = guild
         const icon = guild.iconURL()
-        message.channel.send(`Guild Name: ${name} \n Region: ${region} \nMember Count: ${memberCount} \nServer Owner: ${owner.user.tag}`);
+        message.channel.send(`Member Count: ${memberCount}`);
     }
 }
