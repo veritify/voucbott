@@ -10,7 +10,7 @@ module.exports = {
     name:"play",
     aliases: ["skip", "stop"],
     cooldown: 0,
-    execute: async function(message, args, cmd, client, user) {
+    execute: async function(message, args, cmds, client, user) {
         const voice_channel = message.member.voice.channel;
         if(!voice_channel) return message.channel.send(
             new Discord.MessageEmbed()
@@ -26,7 +26,7 @@ module.exports = {
         const server_queue = queue.get(message.guild.id);
 
 
-        if(cmd === "play"){
+        if(cmds === "play"){
             if(!server_queue){
                 const queue_constructor = {
                     voice_channel: voice_channel,
