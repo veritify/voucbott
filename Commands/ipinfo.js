@@ -39,12 +39,6 @@ module.exports = {
                     value: json.zip,
                     inline: true
                 },
-
-                {
-                    name: "Latitude - Longitude",
-                    value: `Latitude - ${lat} | Longitude - ${lon}`,
-                    inline:true
-                },
                 {
                     name: "Timezone",
                     value: json.timezone,
