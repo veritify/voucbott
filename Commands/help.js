@@ -62,8 +62,13 @@ module.exports = {
                     inline: true
                 },
                 {
-                    name: "8ball",
+                    name: "+8ball",
                     value: "Gives you an answer to your question.",
+                    inline: true
+                },
+                {
+                    name: "+meme",
+                    value: "Sends a meme to you!",
                     inline: true
                 }
             )
