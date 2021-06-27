@@ -14,9 +14,8 @@ new Discord.MessageEmbed()
 )  
   message.channel.updateOverwrite(message.channel.guild.roles.everyone, {SEND_MESSAGES: false });
 message.channel.send(new Discord.MessageEmbed()
-.setImage("https://cdn.discordapp.com/attachments/833139865352273930/835651790149517370/image0.gif")
 .setDescription(`**Channel Locked**`)
-.setColor(0xFF8C00)
+.setColor("BLUE")
 .setFooter(message.guild.name, message.guild.iconURL({
 dynamic: true
 }))

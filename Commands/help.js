@@ -113,6 +113,16 @@ module.exports = {
                     name: "+clear (amount)",
                     value: "Clears the amount of messages(up to 100).",
                     inline: true
+                },
+                {
+                    name:" +lock",
+                    value: "Locks the channel the command was run in.",
+                    inline: true
+                },
+                {
+                    name: "+unlock",
+                    value: "Unlocks the channel the command was run in.",
+                    inline: true
                 }
             )
             .setColor("BLUE")
@@ -158,5 +168,11 @@ module.exports = {
             .setColor("BLUE")
             message.channel.send(embed)
         }
+        message.channel.send(new Discord.MessageEmbed()
+        .setTitle("Support Server")
+        .setURL("https://discord.gg/9vA3CAK2Tj")
+        .setColor("BLUE")
+        .setTimestamp()
+        )
     }
 }
