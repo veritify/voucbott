@@ -8,6 +8,7 @@ module.exports = {
         .then(async json => {
             const embed = new Discord.MessageEmbed()
             .setTitle(json.title)
+            .setDescription(`Upvotes: ${json.ups} | NSFW: ${json.nsfw} | Author: ${json.author}`)
             .setImage(json.url)
             .setColor("BLUE")
             .setFooter(`Subreddit: ${json.subreddit} | Link: ${json.postLink}`);
