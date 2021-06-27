@@ -70,6 +70,11 @@ module.exports = {
                     name: "+meme",
                     value: "Sends a meme to you!",
                     inline: true
+                },
+                {
+                    name: "+ipinfo (ip)",
+                    value: "Sends information on an IP.",
+                    inline: true
                 }
             )
             .setColor("BLUE")
