@@ -46,7 +46,6 @@ module.exports = {
                 }
             )
             .setColor("BLUE")
-            .setFooter(`Subreddit: ${json.subreddit} | Link: ${json.postLink}`);
             let msg = await message.channel.send(
                 new Discord.MessageEmbed()
                 .setTitle("Fetching...")
