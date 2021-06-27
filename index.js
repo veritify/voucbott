@@ -60,7 +60,7 @@ client.on('message', async message => {
             upvotes: [
             ],
             downvotes: [
-            ],
+            ],//123
             vouchedFor: [],
             downvotedFor: []
         })
