@@ -11,9 +11,7 @@ module.exports = {
             .setColor("BLUE")
             .setTimestamp()
         )
-        mi.profile(query).then(async(res) => {
-            
-    })
-     message.chanel.send(res)
-}
+        f = mi.profile(query)
+            message.channel.send(f.text)
+    }
 }
