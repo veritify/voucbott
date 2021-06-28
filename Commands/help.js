@@ -81,6 +81,10 @@ module.exports = {
                     name: "+ipinfo (ip)",
                     value: "Sends information on an IP.",
                     inline: true
+                },
+                {
+                    name: "+weather (option)",
+                    value: "Sends info on the wether for the option."
                 }
             )
             .setColor("BLUE")
