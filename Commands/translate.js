@@ -12,6 +12,12 @@ module.exports = {
             .setTimestamp()
         )
         const translated = await translate(query, {to: "en"});
-        message.channel.send(translated.text)
+        message.channel.send(
+            new Discord.MessageEmbed()
+            .setTimestamp()
+            .setTitle("Translated!")
+            .setDescription(translated.text)
+            .setColor("BLUE")
+            )
     }
 }
