@@ -6,6 +6,6 @@ module.exports = {
     aliases: [],
     execute: async function(message, args, client, user) {
         f = await a.get("https://opentdb.com/api.php?amount=1&type=multiple")
-        message.channel.send(f.text)
+        message.channel.send(f)
     }
 }
