@@ -36,7 +36,7 @@ module.exports = {
             },
             {
                 name: "Temperature",
-                value: current.temperature,
+                value: current.temperature+ "°",
                 inline: true
             },
             {
@@ -46,12 +46,12 @@ module.exports = {
             },
             {
                 name: "Feels Like",
-                value: current.feelslike,
+                value: current.feelslike + "°",
                 inline: true
             },
             {
                 name: "Humidity",
-                value: current.humidity = "%",
+                value: current.humidity + "%",
                 inline: true
             }
             )
