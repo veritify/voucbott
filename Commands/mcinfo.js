@@ -12,7 +12,7 @@ module.exports = {
             .setTimestamp()
         )
         mi.profile(query).then(async(res) => {
-            message.chanel.send(res)
+            await message.chanel.send(res)
     })
 }
 }
