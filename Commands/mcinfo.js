@@ -12,12 +12,7 @@ module.exports = {
             .setTimestamp()
         )
         mi.profile(query).then(async(res) => {
-            const embed = new Discord.MessageEmbed()
-            .setTitle("Found!")
-            .setDescription(res)
-            .setColor("BLUE")
-            .setTimestamp()
-            message.chanel.send(embed)
+            message.chanel.send(res)
     })
 }
 }
