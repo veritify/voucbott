@@ -167,6 +167,11 @@ module.exports = {
                     name: "+membercount",
                     value: "Sends how many members are in the server.",
                     inline: true
+                },
+                {
+                    name: "+guild",
+                    value: "Sends how many guilds the bot is in.",
+                    inline: true
                 }
             )
             .setColor("BLUE")
