@@ -127,6 +127,11 @@ module.exports = {
                     name: "+unlock",
                     value: "Unlocks the channel the command was run in.",
                     inline: true
+                },
+                {
+                    name:" +translate (message)", 
+                    value: "Translates the message to English",
+                    inline: true
                 }
             )
             .setColor("BLUE")
