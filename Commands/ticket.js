@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 module.exports = {
     name:"ticket",
-    async execute(message, args, client, user) {
+    async execute(message, args, client, user, guild) {
         const channel = await guild.channels.create(`ticket${message.author.id}`);
 
         channel.updateOverwrite(message.guild.id, {
