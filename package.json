@@ -15,6 +15,7 @@
     "discord.js": "^12.5.3",
     "enmap": "^5.8.4",
     "ffmpeg": "0.0.4",
+    "give-me-a-joke": "^0.4.0",
     "image-search-engine": "^1.2.0",
     "images-scraper": "^6.3.0",
     "minecraft-information": "^0.3.0",

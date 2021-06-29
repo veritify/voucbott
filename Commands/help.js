@@ -90,6 +90,16 @@ module.exports = {
                     name: "+urban (message)",
                     value: "Looks up your message on urban dictionary.",
                     inline: true
+                },
+                {
+                    name: "+morse (message)",
+                    value: "Encodes or Decodes you message.",
+                    inline: true
+                },
+                {
+                    name: "+joke",
+                    value: "Sends a joke!",
+                    inline: true
                 }
             )
             .setColor("BLUE")
