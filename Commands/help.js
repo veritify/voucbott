@@ -79,7 +79,8 @@ module.exports = {
                 },
                 {
                     name: "+weather (option)",
-                    value: "Sends info on the wether for the option."
+                    value: "Sends info on the wether for the option.",
+                    inline: true
                 },
                 {
                     name: "+reverse (message)",
