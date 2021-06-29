@@ -43,11 +43,6 @@ module.exports = {
                     inline: true
                 },
                 {
-                    name: "+ping",
-                    value: "Sends Pong!",
-                    inline: true
-                },
-                {
                     name: "+say",
                     value: "Sends back your message.",
                     inline: true
