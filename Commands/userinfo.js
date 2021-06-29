@@ -1,9 +1,7 @@
 const Discord = require('discord.js')
 const moment = require('moment');
 module.exports = {
-    name: "downvote",
-    description: "Downvote a user",
-    aliases: [],
+    name: "userinfo",
     execute: async function (message, args, client) {
     let user = message.mentions.users.first() || message.author;
     const joinDiscord = moment(user.createdAt).format('llll');
