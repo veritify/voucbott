@@ -16,7 +16,7 @@ module.exports = {
         await channel.send(
           new Discord.MessageEmbed()
           .setTitle("Ticket Created!")
-          .setDescription("")
+          .setDescription("test")
         )
     }
 }//123
