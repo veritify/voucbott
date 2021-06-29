@@ -4,7 +4,7 @@ module.exports = {
     name: "downvote",
     description: "Downvote a user",
     aliases: [],
-    execute: async function (message, args, client, user) {
+    execute: async function (message, args, client) {
     let user = message.mentions.users.first() || message.author;
     const joinDiscord = moment(user.createdAt).format('llll');
     const joinServer = moment(user.joinedAt).format('llll');
