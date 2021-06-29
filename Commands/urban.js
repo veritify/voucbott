@@ -10,7 +10,7 @@ module.exports = {
     urban(XD).first(json => {
         if(!json) return message.reply("No results found!")
         let urbEmbed = new Discord.MessageEmbed()
-        .setColor("00ff00")
+        .setColor("BLUE")
         .setTitle(json.word)
         .setDescription(json.definition)
         .addField("Upvotes", json.thumbs_up, true)

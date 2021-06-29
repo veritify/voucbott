@@ -80,6 +80,16 @@ module.exports = {
                 {
                     name: "+weather (option)",
                     value: "Sends info on the wether for the option."
+                },
+                {
+                    name: "+reverse (message)",
+                    value: "Reverses your message",
+                    inline: true
+                },
+                {
+                    name: "+urban (message)",
+                    value: "Looks up your message on urban dictionary.",
+                    inline: true
                 }
             )
             .setColor("BLUE")
