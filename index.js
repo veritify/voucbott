@@ -25,7 +25,7 @@ for (let file of commandFiles) {
 client.on('ready', () => {
     console.clear()
     console.log(`${client.user.tag} is online!`)
-    client.user.setActivity(`+help | I am in ${client.guilds.cache.size} servers!`)
+    client.user.setActivity(`+help | ${client.guilds.cache.size} servers! | 50+ commands!`)
     const channel = client.channels.cache.find(channel => channel.name === "Speed")
     channel.join()
 })
